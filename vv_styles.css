@@ -55,7 +55,7 @@ h1{
 }
 #bulb_div {
     margin: 0 auto;
-    width: 767px;
+    width: 700px;
     height: 412px;
     margin-top: 30px;
     background:
@@ -63,19 +63,20 @@ h1{
     background-blend-mode:screen;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 700px auto;
 }
 
 #slogan h1 {
-    width: 75%;
+    width: 55%;
     margin: 0 auto;
-    font-size: 60px;
+    font-size: 66px;
     font-family: 'Ubuntu', 'Arial', sans-serif;
     text-transform:uppercase;
     font-weight: 300;
     background-position: center;
     background-size: 50% 50%;
     background: radial-gradient(circle at center, #515151, #383838),
-    radial-gradient(circle at center, #bba57b, rgba(0, 0, 0, 0));
+    radial-gradient(circle at center, #bba57b, rgba(0, 0, 0, 0) 75%);
     background-blend-mode:lighten;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,7 +87,7 @@ h1{
     color: #454545;
     text-align: center;
     font-weight: 400;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 #go_down {
