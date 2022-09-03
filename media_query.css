@@ -1381,6 +1381,9 @@
     #services {
         height: 551px;
     }
+    #services_list {
+        width: 800px;
+    }
     #services_list ul {
         width: 355px;
         margin-left: 20px;
@@ -1643,7 +1646,6 @@
 }
 @media (orientation: portrait) and (min-device-width: 768px) and (max-device-width: 1023px) {
     body {
-        border: 1px solid pink;
         width: 100%;
         /* overflow-x: hidden; */
     }
@@ -1737,7 +1739,6 @@
 }
 @media (orientation: portrait) and (max-device-width: 500px) /*and (max-device-height: 915px)*/ {
     body {
-        border: 1px solid red;
         width: 412px;
     }
     h1#logo {
@@ -1929,7 +1930,10 @@
         height: 263px;
         margin-bottom: 10px;
         width: 100%;
-    }  
+    }
+    #portfolio_pages {
+        margin-top: 20px;
+    }
     .cover {
         width: 210px;
         height: 150px;
@@ -2200,7 +2204,10 @@
         height: 263px;
         margin-bottom: 10px;
         width: 100%;
-    }  
+    } 
+    #portfolio_pages {
+        margin-top: 20px;
+    }
     .cover {
         width: 185px;
         height: 120px;

@@ -1,3 +1,5 @@
+html { scroll-behavior:smooth } /* плавная прокрутка */
+
 * {
     box-sizing: border-box;
     background-color: #303030;
@@ -116,7 +118,7 @@ h1{
     border: 1px solid #454545;
     position: absolute;
     right: 200px;
-    top: 250px;
+    top: 150px;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -151,7 +153,7 @@ h1{
     width: 1522px;
     height: 690px;
     border: 1px solid #454545;
-    top: 250px;
+    top: 150px;
     right: 200px;
     opacity: 0;
 }
@@ -189,10 +191,12 @@ h1{
     margin-top: 35px;
 }
 #menu_div ul li:hover {
+    cursor: pointer;
     text-decoration-line: overline;
     text-decoration-thickness: 0.5px;
     color: #b69b67;
 }
+
 .sign_in_up {
     color: #665431;
 }
@@ -690,6 +694,7 @@ footer {
     text-transform: uppercase;
 }
 #footer_links li:hover {
+    cursor: pointer;
     color:#b49c6e;
 }
 

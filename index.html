@@ -31,13 +31,13 @@
             <h1 class="h1_gray">MENU</h1>
             <div id="menu_elements" class="lists_menu_like">
                 <ul class="h2">
-                    <li><a href="#">MAIN</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#" onclick="closeMenu()">MAIN</a></li>
+                    <li><a onclick="scrollWindowTo(), closeMenu()">SERVICES</a></li>
+                    <li><a onclick="scrollWindowTo(scrollToPortfolio), closeMenu()">PORTFOLIO</a></li>
                     <li><a href="#">BLOG</a></li>
                     <li><a href="#">PRICING</a></li>
-                    <li><a href="#">FEEDBAKS</a></li>
-                    <li><a href="#">CONTACTS</a></li>
+                    <li><a onclick="scrollWindowTo(scrollToFeedbacks), closeMenu()">FEEDBAKS</a></li>
+                    <li><a onclick="scrollWindowTo(scrollToContacts), closeMenu()">CONTACTS</a></li>
                     <li class="sign_in_up"><a href="#">SIGN UP</a></li>
                     <li class="sign_in_up"><a href="#">SIGN IN</a></li>
                     <li><a href="#">SEND MESSAGE</a></li>
@@ -183,12 +183,18 @@
     <footer>
         <h1 id="footer_slogan" class="slogan">this is the place where sparkles of idea turns into fire</h1>
         <ul id="footer_links">
-            <li><a href="">services</a></li> <li><a href="">portfolio</a></li>
-            <li><a href="">feedbacks</a></li> <li><a href="">contact us</a></li>
-            <li><a href="">contacts</a></li> <li><a href="">facebook</a></li>
-            <li><a href="">linkedin</a></li> <li><a href="">twitter</a></li>
-            <li><a href="">google+</a></li> <li><a href="">sign up</a></li>
-            <li><a href="">sign in</a></li> <li><a href="">search</a></li>
+            <li><a onclick="scrollWindowTo(), closeMenu()">services</a></li>
+            <li><a onclick="scrollWindowTo(scrollToPortfolio), closeMenu()">portfolio</a></li>
+            <li><a onclick="scrollWindowTo(scrollToFeedbacks), closeMenu()">feedbacks</a></li>
+            <li><a onclick="scrollWindowTo(scrollToContactUS), closeMenu()">contact us</a></li>
+            <li><a onclick="scrollWindowTo(scrollToContacts), closeMenu()">contacts</a></li>
+            <li><a href="">facebook</a></li>
+            <li><a href="">linkedin</a></li>
+            <li><a href="">twitter</a></li>
+            <li><a href="">google+</a></li>
+            <li><a href="">sign up</a></li>
+            <li><a href="">sign in</a></li>
+            <li><a href="">search</a></li>
         </ul>
     </footer>
     <div id="underfooter"></div>

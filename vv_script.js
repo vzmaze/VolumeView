@@ -45,17 +45,21 @@ menuBtn.addEventListener("click", () => {
         menuBtnLines[1].style.transform = 'rotate(45deg)';
         menuBtnLines[2].style.transform = 'rotate(-45deg)';
     } else {
-        menu.style.display = 'none';
-        menu.style.opacity = 0;
-        isMenuActive = false;
-        menuBtnLines[0].hidden = false;
-        menuBtnLines.forEach(line => {
-            line.classList.remove('menu_btn_line_longer');
-        });
-        menuBtnLines[1].style.transform = 'unset';
-        menuBtnLines[2].style.transform = 'unset';
+        closeMenu();    
     }
 });
+
+function closeMenu() {
+    menu.style.display = 'none';
+    menu.style.opacity = 0;
+    isMenuActive = false;
+    menuBtnLines[0].hidden = false;
+    menuBtnLines.forEach(line => {
+        line.classList.remove('menu_btn_line_longer');
+    });
+    menuBtnLines[1].style.transform = 'unset';
+    menuBtnLines[2].style.transform = 'unset';
+}
 
 // Настраиваем кнопку "Х" для меню SIGN IN
 let signInWin = document.querySelector("#sign_in_window");
@@ -114,29 +118,40 @@ function crossDissolve(elem, which = true) {
 let bodyWidth = parseInt(getComputedStyle(document.body).width);
 
 let arrowDownBtn = document.querySelector("#arrow_down");
-let scrollY = 1000;
+let scrollToServices = 1000;
+let scrollToPortfolio = 2050;
+let scrollToFeedbacks = 3050;
+let scrollToContacts = 4050;
+let scrollToContactUS = 3050;
 if(window.matchMedia("(max-width: 1400px) and (orientation: landscape)").matches) {
-    scrollY = 820;
+    scrollToServices = 820;
     console.log("1");
 } else if (window.matchMedia("(orientation: portrait) and (max-device-width: 412px)").matches && bodyWidth <= 412) {
-    scrollY = 860;
+    scrollToServices = 960;
+    scrollToPortfolio = 1770;
+    scrollToFeedbacks = 2650;
+    scrollToContacts = 4050;
+    scrollToContactUS = 3250;
     console.log("5");
 } else if (window.matchMedia("(max-width: 1300px) and (orientation: landscape)").matches) {
-    scrollY = 800;
+    scrollToServices = 800;
     console.log("2");
 } else if (window.matchMedia("(orientation: portrait)").matches && window.matchMedia("(max-width: 1023px)").matches) {
-    scrollY = 950;
+    scrollToServices = 950;
     console.log("3");
 } else if (window.matchMedia("(orientation: portrait)").matches && window.matchMedia("(min-width: 1024px)").matches) {
-    scrollY = 1300;
+    scrollToServices = 1300;
     console.log("4");
 }
 arrowDownBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: scrollY,
-        behavior: "smooth"
-    })
+    scrollWindowTo(scrollToServices);
 });
+function scrollWindowTo(distance = scrollToServices){
+    window.scrollTo({
+        top: distance,
+        behavior: "smooth"
+    });
+};
 
 //SERVICES
 
