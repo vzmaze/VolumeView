@@ -1297,8 +1297,10 @@
         width: 800px;
     }
     #bulb_div {
-        height: 180px;
-        background-size: 230px auto;
+        width: 408px;
+        height: 231px;
+        background-size: 400px auto;
+        margin-bottom: 30px;
     }
     #logo_div img {
         width: 384px;
@@ -1421,10 +1423,9 @@
         margin-bottom: 40px;
     }
     #bulb_div {
-        height: 146px;
-        background-size: 200px auto;
-    }
-    #bulb_div {
+        width: 408px;
+        height: 231px;
+        background-size: 400px auto;
         margin-bottom: 30px;
     }
     #scroll_down_title {
@@ -1748,7 +1749,6 @@
         width: 385px;
         margin-top: 30px;
         margin-bottom: 50px;
-
     }
     #logo_div img {
         position: relative;
@@ -1759,8 +1759,11 @@
         font-size: 22px;
     }
     #bulb_div {
-        height: 350px;
-        background-size: 300px auto;
+        height: 200px;
+        width: 400px;
+        background-size: 400px auto;
+        margin-top: 130px;
+        margin-bottom: 60px;
     }
     #menu_btn_frame {
         right: 12px;
