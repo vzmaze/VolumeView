@@ -45,6 +45,7 @@ h1{
 }
 #logo_div h2 {
     float: right;
+    background-color: transparent;
 }
 .h2 {
     font-weight:300;
@@ -54,11 +55,11 @@ h1{
 }
 #bulb_div {
     margin: 0 auto;
-    width: 400px;
-    height: 370px;
-    margin-top: 70px;
+    width: 767px;
+    height: 412px;
+    margin-top: 30px;
     background:
-        url("img/bulb.png"),#303030;
+        url("img/bulb_eye.png"),#303030;
     background-blend-mode:screen;
     background-repeat: no-repeat;
     background-position: center;
